@@ -1,0 +1,221 @@
+
+@media(max-width: 488px){
+    body {
+        margin: 0;
+        
+        display: grid;
+        grid-template-areas: 'haeder header header header'
+                                'nav nav nav nav';
+    
+        grid-template-rows: 50vh 50vh;
+        grid-area: header;
+        background-image: url("./img/ttt.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        font-family: 'Lato', sans-serif;
+    
+    }
+    nav {
+        grid-area: nav;
+        background: black;
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        justify-content: space-between;
+         align-items: center;
+       
+    }
+    
+    form{ 
+        display: none;
+    
+    
+        
+    }
+    
+    form input[type=text] {
+        display: none;
+       
+    
+    }
+    
+    
+    form input[type=text]:focus {
+        display: none;
+      }
+    
+    form button {
+         
+        display: none;
+        
+        
+    }
+    
+    form button:hover {
+    
+      display: none;
+    
+    }
+    form input:hover{
+    
+      display: none;
+    }
+    
+
+}
+
+
+
+
+@media (max-width: 768px){
+
+    body {
+        margin: 0;
+        
+        display: grid;
+        grid-template-areas: 'haeder header header header'
+                                'nav nav nav nav';
+    
+        grid-template-rows: 50vh 50vh;
+        grid-area: header;
+        background-image: url("./img/cleiotn.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        font-family: 'Lato', sans-serif;
+    
+    }
+
+   
+
+    nav {
+        grid-area: nav;
+        background: purple;
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        justify-content: space-between;
+         align-items: center;
+       
+    }
+    form{ 
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+    
+    
+        
+    }
+
+    form input[type=text] {
+        width: 350px;
+        height: 32px;
+        border: none;
+        border-radius: 2.5px;
+        margin-right: 4px;
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: purple;
+        background-image: url('searchicon.png');
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        color: white;
+        font-weight: bold;
+        text-align: left;
+    
+    }
+    
+    
+    form input[type=text]:focus {
+        width: 100%;
+      }
+    
+    form button {
+         
+        width: 100px;
+        height: 32px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(180, 12, 180);
+        color: white;
+        cursor: pointer;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        
+        
+    }
+    
+    form button:hover {
+    
+      background-color: pink;
+      color: purple;
+      
+    
+    }
+    form input:hover{
+    
+      background-color: white;
+      color: black;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: purple;
+        opacity: 0.4;
+        color: black;
+        overflow-y: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+    
+
+
+}
